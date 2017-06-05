@@ -37,6 +37,7 @@ public class FaTingService {
     public boolean start_luzhi(Map<String,Object> configs, JLabel starttime_w_label,JTextField anjianbianhao_textfield,JTextField anyou_textfield){
         String room_host = propertyService.getConfig(configs,"diannaozhuji_ip");
         String device_host = propertyService.getConfig(configs,"shexiangji_ip");
+        String faguan = propertyService.getConfig(configs,"faguan_name");
         String current = timerSerive.getTimeString();
         String anjianbianhao = anjianbianhao_textfield.getText();
         String anyou = anyou_textfield.getText();
@@ -48,8 +49,8 @@ public class FaTingService {
             dbService.executeSql(sql);
         }else{
             starttime_w_label.setText(current);
-            String sql = "insert into "+data_base+".sjsfy_kelu_keluinfo(room_host,device_host,luxiang_start,luxiang_qujian,status,anjianbianhao,anyou,kaitingshijian) " +
-                    "values('"+room_host+"','"+device_host+"','"+current+"','"+current+"-',"+_Constants.KELU_INFO_STATUS_START_LUZHI+",'"+anjianbianhao+"','"+anyou+"','"+new SimpleDateFormat("YYYY-MM-dd").format(new Date())+"')";
+            String sql = "insert into "+data_base+".sjsfy_kelu_keluinfo(room_host,device_host,luxiang_start,luxiang_qujian,status,anjianbianhao,anyou,kaitingshijian,faguan) " +
+                    "values('"+room_host+"','"+device_host+"','"+current+"','"+current+"-',"+_Constants.KELU_INFO_STATUS_START_LUZHI+",'"+anjianbianhao+"','"+anyou+"','"+new SimpleDateFormat("YYYY-MM-dd").format(new Date())+"','"+faguan+"')";
             int pk_id = dbService.insertSql(sql,"id");
             configs.put("sys_luzhi_pk_id",pk_id);
         }

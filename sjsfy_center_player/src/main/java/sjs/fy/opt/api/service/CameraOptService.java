@@ -19,6 +19,9 @@ public class CameraOptService {
         new NativeDiscovery().discover();
     }
 
+    @Autowired
+    FfmpegService ffmpegService;
+
     EmbeddedMediaPlayerComponent playerComponent = new EmbeddedMediaPlayerComponent();
 
     @Autowired
@@ -44,36 +47,9 @@ public class CameraOptService {
      * 将文件保存到：配置的跟目录的 sjsfy_kelu/案号/文件
      */
     public boolean play(Map<String,Object> configs){
-        String panfu = configs.get("diannaozhuji_panfu").toString();
-        String root_dir = _Constants.LOCAL_PATH;
-        String filepath = panfu + File.separator + root_dir;
-        File file = new File(filepath);
-        if(!file.exists()){
-            file.mkdirs();
-        }
-        filepath = filepath + File.separator + configs.get("sys_luzhi_pk_id")+"_"+configs.get("anhao") + File.separator;
-        file = new File(filepath);
-        if(!file.exists()){
-            file.mkdirs();
-        }
-        String filename = System.currentTimeMillis() + ".mp4";
-        String savefile = filepath + filename;
-        System.out.println(savefile);
-
-        String[] playOptions = {
-                "--subsdec-encoding=GB18030",
-                ":sout=#transcode{vcodec=mp4v,vb=4096,scale=1,acodec=mpga,ab=128,channels=2,samplerate=44100}:duplicate{dst=file{dst=" + savefile + "},dst=display}",
-                ":input-slave=alsa://hw:0,0"};
-//        String[] playOptions = {
-//                "--subsdec-encoding=GB18030",
-//                ":sout=#transcode{vcodec=mp4v,vb=4096,scale=1,acodec=mpga,ab=128,channels=2,samplerate=44100}:duplicate{dst=file{dst=" + savefile + "},dst=display}"
-//        };
-
-//        String[] playOptions = {};
         String murl = getMurl(configs);
-        getPlayerComponent().getMediaPlayer().playMedia(murl,playOptions);
-        String sql = "insert into sjsfy_opt_shipin.sjsfy_kelu_kelufile(filename,filepart) values('"+propertyService.getConfig(configs,"filepath")+"','"+filename+"')";
-        dbService.executeSql(sql);
+        ffmpegService.startSaveViedo(murl,configs);
+        getPlayerComponent().getMediaPlayer().playMedia(murl);
         return true;
     }
 
@@ -83,6 +59,7 @@ public class CameraOptService {
      */
     public boolean stop(){
         getPlayerComponent().getMediaPlayer().stop();
+        ffmpegService.killTask(true);
         return true;
     }
 

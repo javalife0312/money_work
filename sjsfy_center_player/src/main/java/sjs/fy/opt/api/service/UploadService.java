@@ -49,7 +49,7 @@ public class UploadService {
                                 String panfu = configs.get("diannaozhuji_panfu").toString();
                                 String root_dir = _Constants.LOCAL_PATH;
                                 String filepath = panfu + File.separator + root_dir;
-                                filepath = filepath + File.separator + id +"_"+cache.get(id).get("anjianbianhao") + File.separator;
+                                filepath = filepath + File.separator + id + File.separator;
 
                                 boolean success = copyFiles(filepath,cache.get(id).get("device_host").toString());
                                 if(success){
