@@ -1,5 +1,6 @@
 package sjs.fy.opt.api.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import sjs.fy.opt.api.constant._Constants;
 
@@ -17,6 +18,9 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Component
 public class FfmpegService {
+    @Autowired
+    PropertyService propertyService;
+
     private final Map<Process,Map<String,String>> jobs = new ConcurrentHashMap<Process,Map<String,String>>();
     private Timer write;
     private Timer shutdown;
@@ -67,7 +71,7 @@ public class FfmpegService {
             if(!dir.exists()){
                 dir.mkdirs();
             }
-            String cmd = "cmd /c start \"勿关！视频录制+\" /min "+_Constants.LOCAL_BAT_PATH+" "+ murl + " " + filename;
+            String cmd = "cmd /c start \"勿关！视频录制+\" /min "+propertyService.getValueByKey("local_bat_path")+" "+ murl + " " + filename;
             System.out.println(cmd);
             Process process = runtime.exec(cmd);
             return true;

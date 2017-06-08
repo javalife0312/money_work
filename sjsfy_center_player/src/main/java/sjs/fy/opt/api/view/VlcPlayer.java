@@ -3,8 +3,8 @@ package sjs.fy.opt.api.view;
 import sjs.fy.opt.api.service.CameraOptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import sjs.fy.opt.api.service.PropertyService;
 import sjs.fy.opt.api.service.TimerSerive;
-import uk.co.caprica.vlcj.component.EmbeddedMediaPlayerComponent;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,6 +20,8 @@ public class VlcPlayer extends JFrame{
 	private InfoPanel optionPanel;
 	@Autowired
 	private CameraOptService cameraOptService;
+	@Autowired
+	private PropertyService propertyService;
 
 
 
@@ -27,7 +29,8 @@ public class VlcPlayer extends JFrame{
 		/**
 		 * 主面板
 		 */
-		setIconImage(Toolkit.getDefaultToolkit().getImage("icon/logo.png"));
+		String iconPath = propertyService.getValueByKey("iconpath");
+		setIconImage(Toolkit.getDefaultToolkit().getImage(iconPath+"logo.png"));
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		setBounds(200, 150, 800, 650);
 		setResizable(false);
@@ -40,7 +43,7 @@ public class VlcPlayer extends JFrame{
 		logoPanel.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
 		getContentPane().add(logoPanel, BorderLayout.NORTH);
 		JLabel logo_Label = new JLabel("");
-		logo_Label.setIcon(new ImageIcon("icon/title.png"));
+		logo_Label.setIcon(new ImageIcon(iconPath+"title.png"));
 		logoPanel.add(logo_Label);
 
 		/**

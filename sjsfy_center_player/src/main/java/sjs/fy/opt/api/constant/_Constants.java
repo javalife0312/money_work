@@ -20,10 +20,9 @@ public interface _Constants {
     int KELU_INFO_STATUS_START_KELU=6;      //上传文件成功之后开始刻录
     int KELU_INFO_STATUS_DONE=1;            //刻录完成之后，任务完成
 
-    String HDSF_URL="hdfs://192.168.152.129:9000/sjsfy/";
-    String HDSF_MASTER="hdfs://192.168.152.129:9000";
     String LOCAL_PATH="sjsfy_kelu";
-    String LOCAL_BAT_PATH="D:/tmp/test.bat";
+    String LOCAL_PROPERTIES_PATH="D:/tmp/player.properties";
+
 
     int KELU_INFO_CHIXUTIME=5;//单位 分钟
 

@@ -7,11 +7,7 @@ public class _Constant {
     public static final int DELAY_TIME = 1000*3;
     public static final int PERIOD_TIME = 1000*60*1;
 
-    public static final String HDSF_URL="hdfs://192.168.152.129:9000/sjsfy/";
-    public static final String HDSF_MASTER="hdfs://192.168.152.129:9000";
-    public static final String LOCAL_PATH="sjsfy_kelu";
-    public static final String LOCAL_PATH_KELU="D:\\sjsfy_kelu_jobs";
-    public static final String LOCAL_PATH_KELU_LABEL="D:\\sjsfy_kelu_labels";
+    public static final String LOCAL_PROPERTIES_PATH="D:/tmp/player.properties";
 
 
     public static final int KELU_INFO_STATUS_START_LUZHI=2;     //播放器点击开始录制

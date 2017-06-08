@@ -13,6 +13,7 @@ import sjs.fy.opt.api.common.FileUtils;
 import sjs.fy.opt.api.service.ExcelService;
 import sjs.fy.opt.api.service.IniService;
 import sjs.fy.opt.api.constant._Constant;
+import sjs.fy.opt.api.service.PropertyService;
 
 import java.io.*;
 import java.util.*;
@@ -32,6 +33,8 @@ public class JobService {
     IniService iniService;
     @Autowired
     ExcelService excelService;
+    @Autowired
+    PropertyService propertyService;
 
 
     /**
@@ -69,12 +72,12 @@ public class JobService {
                                                 KeluJobStatus keluJobStatus = getKeluJobStatus(id+"");
                                                 if(keluJobStatus.getJobState().equals("2")){ //刻录完成 删除目录
                                                     dbService.executeSql("update sjsfy_opt_shipin.sjsfy_kelu_keluinfo set status=" + _Constant.KELU_INFO_STATUS_WANCHENG_KELU + " where id=" + id);
-                                                    String dowload_local_path = _Constant.LOCAL_PATH_KELU + "/" + QUANJU_JOBS.get("id");
+                                                    String dowload_local_path = propertyService.getValueByKey("LOCAL_PATH_KELU") + "/" + QUANJU_JOBS.get("id");
                                                     FileUtils.deleteDir(new File(dowload_local_path));
                                                     QUANJU_JOBS.clear();
                                                 }else {
                                                     dbService.executeSql("update sjsfy_opt_shipin.sjsfy_kelu_keluinfo set status=" + _Constant.KELU_INFO_STATUS_SHIBAI_KELU + " where id=" + id);
-                                                    String dowload_local_path = _Constant.LOCAL_PATH_KELU + "/" + QUANJU_JOBS.get("id");
+                                                    String dowload_local_path = propertyService.getValueByKey("LOCAL_PATH_KELU") + "/" + QUANJU_JOBS.get("id");
                                                     FileUtils.deleteDir(new File(dowload_local_path));
                                                     QUANJU_JOBS.clear();
                                                 }
@@ -220,11 +223,11 @@ public class JobService {
      */
     private boolean download2(Integer id) throws IOException {
         if(QUANJU_JOBS.get("status").toString().equals(_Constant.KELU_INFO_STATUS_SHANGCHUAN_LUZHI+"")){
-            String download_hdfs_path = _Constant.HDSF_MASTER + "/sjsfy/" + QUANJU_JOBS.get("device_host") + "/" + QUANJU_JOBS.get("id");
-            String dowload_local_path = _Constant.LOCAL_PATH_KELU + "/" + QUANJU_JOBS.get("id") + "/";
+            String download_hdfs_path = propertyService.getValueByKey("HDSF_MASTER") + "/sjsfy/" + QUANJU_JOBS.get("device_host") + "/" + QUANJU_JOBS.get("id");
+            String dowload_local_path = propertyService.getValueByKey("LOCAL_PATH_KELU") + "/" + QUANJU_JOBS.get("id") + "/";
 
             Configuration configuration = new Configuration();
-            configuration.set("fs.defaultFS", _Constant.HDSF_MASTER);
+            configuration.set("fs.defaultFS", propertyService.getValueByKey("HDSF_MASTER"));
             FileSystem fileSystem = FileSystem.get(configuration);
 
             InputStream in = null;
@@ -278,9 +281,9 @@ public class JobService {
             bufferedWriter = new BufferedWriter(new FileWriter(job_file));
             bufferedWriter.write("JobID="+job.get("id")+"\n");
 
-            String dowload_local_path = _Constant.LOCAL_PATH_KELU + "/" + job.get("id")+"_"+job.get("anjianbianhao");
+            String dowload_local_path = propertyService.getValueByKey("LOCAL_PATH_KELU") + "/" + job.get("id")+"_"+job.get("anjianbianhao");
             bufferedWriter.write("Data="+dowload_local_path+"\n");
-            bufferedWriter.write("PrintLabel="+_Constant.LOCAL_PATH_KELU_LABEL+"\\"+_Constant.STD_MERAGE_FILE+"\n");
+            bufferedWriter.write("PrintLabel="+propertyService.getValueByKey("LOCAL_PATH_KELU_LABEL")+"/"+_Constant.STD_MERAGE_FILE+"\n");
             bufferedWriter.write("VolumeName="+job.get("id")+"\n");
             bufferedWriter.write("BurnSpeed="+8+"\n");
 

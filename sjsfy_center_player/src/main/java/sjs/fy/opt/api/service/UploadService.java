@@ -26,9 +26,14 @@ public class UploadService {
     DBService dbService;
     @Autowired
     DeviceService deviceService;
+    @Autowired
+    PropertyService propertyService;
+
+    private String HDSF_MASTER;
 
     @PostConstruct
     public void  init(){
+        HDSF_MASTER = propertyService.getValueByKey("hdfs_master");
         configs.putAll(deviceService.getRoomInfo());
 
         //hdfs
@@ -103,7 +108,7 @@ public class UploadService {
     public boolean copyFiles(String dir,String ip){
         try {
             Configuration configuration = new Configuration();
-            configuration.set("fs.defaultFS", _Constants.HDSF_MASTER);
+            configuration.set("fs.defaultFS", HDSF_MASTER);
             File fileDir = new File(dir);
             //约定目录仅有一层
             if(fileDir.isDirectory()){
@@ -155,20 +160,20 @@ public class UploadService {
     }
 
 
-	/**
-	 * 将本地文件转换成hdfs文件
-	 * @param fileName
-	 * @param ip
-	 * @param dir
-	 * @return
-	 */
-	private String local2hdfs(String fileName,String ip,String dir){
-		StringBuffer result = new StringBuffer(_Constants.HDSF_MASTER).append("/");
-		result.append(ip).append("/");
-		result.append(dir).append("/");
-		result.append(fileName);
-		return result.toString();
-	}
+//	/**
+//	 * 将本地文件转换成hdfs文件
+//	 * @param fileName
+//	 * @param ip
+//	 * @param dir
+//	 * @return
+//	 */
+//	private String local2hdfs(String fileName,String ip,String dir){
+//		StringBuffer result = new StringBuffer(HDSF_MASTER).append("/");
+//		result.append(ip).append("/");
+//		result.append(dir).append("/");
+//		result.append(fileName);
+//		return result.toString();
+//	}
 
     /**
      * 将本地文件转换成hdfs文件
@@ -178,7 +183,7 @@ public class UploadService {
      */
     private String local2hdfs_dir(String ip,String dir){
         StringBuffer result = new StringBuffer();
-        result.append(_Constants.HDSF_MASTER).append("/sjsfy/");
+        result.append(HDSF_MASTER).append("/sjsfy/");
         result.append(ip).append("/");
         result.append(dir);
         return result.toString();

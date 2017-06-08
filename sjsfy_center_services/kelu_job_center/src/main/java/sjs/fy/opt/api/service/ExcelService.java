@@ -5,6 +5,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.util.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import sjs.fy.opt.api.constant._Constant;
 
@@ -16,6 +17,9 @@ import java.util.Map;
  */
 @Component
 public class ExcelService {
+
+    @Autowired
+    PropertyService propertyService;
 
 //    /**
 //     * 生成盘面的Label的EXCEL
@@ -62,7 +66,7 @@ public class ExcelService {
     public boolean createJobMergeFile(String id, String[] rowHeader, String[] rowData){
         BufferedWriter writer = null;
         try{
-            File file = new File(_Constant.LOCAL_PATH_KELU_LABEL+"\\" + _Constant.STD_MERAGE_FILE);
+            File file = new File(propertyService.getValueByKey("LOCAL_PATH_KELU_LABEL")+"/" + _Constant.STD_MERAGE_FILE);
             if(file.exists()){
                 file.delete();
             }
@@ -104,22 +108,22 @@ public class ExcelService {
         return true;
     }
 
-    /**
-     * 生成盘面的Label的EXCEL
-     * @param id
-     * @return
-     */
-    public boolean createJobLabel(String id){
-
-        try{
-            File src = new File(_Constant.LOCAL_PATH_KELU_LABEL + "\\template.std");
-            File desc = new File(_Constant.LOCAL_PATH_KELU_LABEL + "\\"+id +".std");
-            IOUtils.copy(new FileInputStream(src),new FileOutputStream(desc));
-        }catch (Exception e){
-
-        } finally {
-
-        }
-        return true;
-    }
+//    /**
+//     * 生成盘面的Label的EXCEL
+//     * @param id
+//     * @return
+//     */
+//    public boolean createJobLabel(String id){
+//
+//        try{
+//            File src = new File(_Constant.LOCAL_PATH_KELU_LABEL + "\\template.std");
+//            File desc = new File(_Constant.LOCAL_PATH_KELU_LABEL + "\\"+id +".std");
+//            IOUtils.copy(new FileInputStream(src),new FileOutputStream(desc));
+//        }catch (Exception e){
+//
+//        } finally {
+//
+//        }
+//        return true;
+//    }
 }
