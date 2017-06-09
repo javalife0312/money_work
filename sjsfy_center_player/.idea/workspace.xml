@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c817b6-67fe-4760-8985-6d2dfbdc51a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/icon/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/icon/title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/constant/_Constants.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/constant/_Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService$1.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService$2.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/FfmpegService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/PropertyService.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/PropertyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService$1$1.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService$1.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/service/UploadService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer$1.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer$2.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer.class" afterPath="$PROJECT_DIR$/target/classes/sjs/fy/opt/api/view/VlcPlayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sjsfy_center_player-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/sjsfy_center_player-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sjsfy_center_player-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/sjsfy_center_player-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/constant/_Constants.java" afterPath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/constant/_Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/FfmpegService.java" afterPath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/FfmpegService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/PropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/PropertyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/UploadService.java" afterPath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/service/UploadService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/view/VlcPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/view/VlcPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/constant/_Constant.java" afterPath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/constant/_Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/job/service/JobService.java" afterPath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/job/service/JobService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/service/ExcelService.java" afterPath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/src/main/java/sjs/fy/opt/api/service/ExcelService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/java/sjs/fy/opt/api/constant/Constant.java" afterPath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/java/sjs/fy/opt/api/constant/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/icon/logo.png" afterPath="$PROJECT_DIR$/icon.bak/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/icon/title.png" afterPath="$PROJECT_DIR$/icon.bak/title.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/pom.xml" afterPath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,11 +62,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_Constants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-345">
+              <caret line="62" column="14" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="68" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sjs/fy/opt/api/constant/_Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
               <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="document" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/document">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -236,146 +227,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjsfy_center_player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1032,12 +883,12 @@
       <workItem from="1496623382958" duration="320000" />
       <workItem from="1496624085333" duration="26000" />
       <workItem from="1496702159375" duration="2953000" />
-      <workItem from="1496963087870" duration="3013000" />
+      <workItem from="1496963087870" duration="3391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74840000" />
+    <option name="totallyTimeSpent" value="75218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1323,14 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1775">
-          <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/soft/programFiles/java/jdk/jdk/src.zip!/java/awt/Toolkit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -1351,14 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1405,6 +1240,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="62" column="14" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="68" selection-end-column="15" />
           <folding />
         </state>
       </provider>
