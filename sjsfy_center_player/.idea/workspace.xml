@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c817b6-67fe-4760-8985-6d2dfbdc51a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/pom.xml" afterPath="$PROJECT_DIR$/../sjsfy_center_services/kelu_job_center/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/java/sjs/fy/opt/api/web/DefaultController.java" afterPath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/java/sjs/fy/opt/api/web/DefaultController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/../sjsfy_center_services/web_manage_center/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -883,12 +884,12 @@
       <workItem from="1496623382958" duration="320000" />
       <workItem from="1496624085333" duration="26000" />
       <workItem from="1496702159375" duration="2953000" />
-      <workItem from="1496963087870" duration="3391000" />
+      <workItem from="1496963087870" duration="3857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75218000" />
+    <option name="totallyTimeSpent" value="75684000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -900,7 +901,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />

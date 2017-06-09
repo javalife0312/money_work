@@ -19,6 +19,6 @@ public class DefaultController {
     @RequestMapping(value="/",method= RequestMethod.GET, produces = "application/json;charset=utf8")
     @ResponseBody
     public ModelAndView index(){
-        return new ModelAndView("redirect:AdminLTE/pages/admin/admin_user_manage.html");
+        return new ModelAndView("redirect:AdminLTE/pages/admin/admin_center_manage.html");
     }
 }
