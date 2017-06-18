@@ -1,0 +1,22 @@
+#
+#Wed Mar 28 13:40:22 CST 2012
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=
+version=3.2
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=/lsweb/hibernate.reveng.xml
+configFile=/lsweb/src/hibernate.cfg.xml
+createConfigFile=false
+addLibs2Classpath=false

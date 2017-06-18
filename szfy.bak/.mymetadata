@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ls3x"
+  id="myeclipse.1293872977080"
+  context-root="/ls3x"
+  j2ee-spec="5.0"
+  archive="ls3x.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

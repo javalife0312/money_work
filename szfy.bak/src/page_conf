@@ -1,0 +1,1 @@
+create table ls3x_kdd_page_conf(type1_jjr_name varchar(20));
