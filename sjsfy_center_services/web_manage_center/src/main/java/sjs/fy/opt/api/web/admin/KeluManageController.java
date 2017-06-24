@@ -59,11 +59,11 @@ public class KeluManageController {
                     "\tkelu.id,\n" +
                     "\tkelu.room_host,\n" +
                     "\tkelu.device_host,\n" +
-                    "\tkelu.luxiang_start,\n" +
+//                    "\tkelu.luxiang_start,\n" +
                     "\tkelu.luxiang_qujian,\n" +
-                    "\tkelu.luxiang_end,\n" +
-                    "\tkelu.kelu_start,\n" +
-                    "\tkelu.kelu_end,\n" +
+//                    "\tkelu.luxiang_end,\n" +
+//                    "\tkelu.kelu_start,\n" +
+//                    "\tkelu.kelu_end,\n" +
                     "\tkelu.faguan,\n" +
                     "\tkelu.anjianbianhao,\n" +
                     "\tkelu.anyou,\n" +
@@ -85,11 +85,11 @@ public class KeluManageController {
         generateTitle(titles,"room_host","法庭IP");
         generateTitle(titles,"device_host","设备IP");
 
-        generateTitle(titles,"luxiang_start","录像开始时间");
+//        generateTitle(titles,"luxiang_start","录像开始时间");
         generateTitle(titles,"luxiang_qujian","录像区间");
-        generateTitle(titles,"luxiang_end","录像结束时间");
-        generateTitle(titles,"kelu_start","刻录开始时间");
-        generateTitle(titles,"kelu_end","刻录结束时间");
+//        generateTitle(titles,"luxiang_end","录像结束时间");
+//        generateTitle(titles,"kelu_start","刻录开始时间");
+//        generateTitle(titles,"kelu_end","刻录结束时间");
         generateTitle(titles,"faguan","法官账号");
         generateTitle(titles,"anjianbianhao","案件编号");
         generateTitle(titles,"anyou","案由");

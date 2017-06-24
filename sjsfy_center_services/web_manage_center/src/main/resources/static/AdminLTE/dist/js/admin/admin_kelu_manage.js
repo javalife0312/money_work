@@ -80,27 +80,29 @@ $(function() {
                         paging: false,
                         columnDefs:[
                             {
-                                "targets": 11,
+                                "targets": 7,
                                 "render": function ( data, type, row ) {
                                     if(data==-1){
                                         return '刻录失败'
                                     }else if(data==1){
                                         return '刻录成功'
                                     }else if(data==2){
-                                        return '开始录像'
+                                        return '录像中'
                                     }else if(data==3){
                                         return '暂停录像'
                                     }else if(data==4){
-                                        return '结束录像'
+                                        return '录像完成-数据上传中'
                                     }else if(data==5){
-                                        return '开始录像'
+                                        return '视频上传成功'
+                                    }else if(data==6){
+                                        return '刻录-任务生成'
                                     }else {
                                         return '--'
                                     }
                                 }
                             },
                             {
-                                "targets": 12,
+                                "targets": 8,
                                 "render": function ( data, type, row ) {
                                     var btn_opt =
                                         "<div class='btn-group'>"+

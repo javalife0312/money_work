@@ -19,11 +19,5 @@ public class _Constant {
     public static final int KELU_INFO_STATUS_WANCHENG_KELU=1;    //刻录完成
     public static final int KELU_INFO_STATUS_SHIBAI_KELU=-1;    //刻录完成
 
-
-
-
-    public static final int KELU_INFO_STATUS_START_KELU=6;      //上传文件成功之后开始刻录
-    public static final int KELU_INFO_STATUS_DONE=1;            //刻录完成之后，任务完成
-
     public static final String STD_MERAGE_FILE="MyMerge.csv";
 }
